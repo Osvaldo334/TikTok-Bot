@@ -35,9 +35,9 @@ def loop1():  # views
         loop1()
 
 
-def loop2():  # followers
+def loop2():  # followers 1000
     sleep(10)
-    try:
+    try:1000
         driver.find_element_by_xpath("/html/body/div[4]/div[1]/div[3]/div/div[1]/div/button").click()
     except:
         print("You didn't solve the captcha yet. Need to refresh to avoid endless loop.")
@@ -53,7 +53,7 @@ def loop2():  # followers
         sleep(10)
         driver.refresh()
         print("")
-        print(">>> Followers Sent <<<")
+        print(">>> 10000 <<<")
         print("")
         sleep(2520)
         loop2()
@@ -64,15 +64,16 @@ def loop2():  # followers
         loop2()
 
 
-def loop3():  # shares
+def loop3():  # shares100000
     sleep(10)
-    try:
+
+    try:100000
         driver.find_element_by_xpath("/html/body/div[4]/div[1]/div[3]/div/div[5]/div/button").click()
     except:
         print("You didn't solve the captcha yet. Need to refresh to avoid endless loop.")
         driver.refresh()
         loop3()
-    try:
+    try:10000
         sleep(2)
         driver.find_element_by_xpath("/html/body/div[4]/div[6]/div/form/div/input").send_keys(vidUrl)
         sleep(1)
@@ -82,7 +83,8 @@ def loop3():  # shares
         sleep(10)
         driver.refresh()
         print("")
-        print(">>> Shares Sent <<<")
+        print(">>> Shares Sent 100000
+<<<")
         print("")
         sleep(110)
         loop3()
@@ -93,15 +95,16 @@ def loop3():  # shares
         loop3()
 
 
-def loop4():  # likes
+def loop4():  # likes 10000
+
     sleep(10)
-    try:
+    try:10000
         driver.find_element_by_xpath("/html/body/div[4]/div[1]/div[3]/div/div[2]/div/button").click()
     except:
         print("You didn't solve the captcha yet. Need to refresh to avoid endless loop.")
         driver.refresh()
         loop4()
-    try:
+    try:100000
         sleep(2)
         driver.find_element_by_xpath("/html/body/div[4]/div[3]/div/form/div/input").send_keys(vidUrl)
         sleep(1)
@@ -111,7 +114,7 @@ def loop4():  # likes
         sleep(10)
         driver.refresh()
         print("")
-        print(">>> Hearts Sent <<<")
+        print(">>>30000<<<")
         print("")
         sleep(3015)
         loop4()
@@ -122,7 +125,7 @@ def loop4():  # likes
         loop4()
 
 
-def loop5():  # comment likes
+def loop5():  # comment likes 500
     sleep(10)
     try:
         driver.find_element_by_xpath("/html/body/div[4]/div[1]/div[3]/div/div[3]/div/button").click()
@@ -169,20 +172,24 @@ I am not responsible for any damage of any kind for using this script''' + Fore.
 if __name__ == '__main__':
     banner()
 
-    vidUrl = input("Your Video URL : ")
+    vidUrl = input(": https://www.tiktok.com/t/ZTdTyu5kP/?k=1")
     print("")
     bot = int(input("What do you want to do? \n1 - Get Views \n2 - Get Followers \n3 - Get Shares \n4 - Get Likes \n5 - Get Comments Likes \nPlease insert a number from the list : "))
     print("\n--------------------------------------")
 
     if (bot > 5 or bot < 1):
         print("You can insert just 1, 2, 3, 4 or 5\nExiting...")
-        sleep(5)
+        sleep(5) bot > 
+5
+
+
+
     else:
         PATH = os.getcwd() + "/chromedriver.exe"  # if you are not using windows, remove the .exe and run the script
         driver = webdriver.Chrome(PATH)
         driver.get("https://zefoy.com/")
 
-        if bot == 1:
+        if bot == 1:https://www.tiktok.com/t/ZTdTyu5kP/?k=1
             loop1()
         elif bot == 2:
             loop2()
