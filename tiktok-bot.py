@@ -66,6 +66,7 @@ def loop2():  # followers
 
 def loop3():  # shares
     sleep(10)
+
     try:
         driver.find_element_by_xpath("/html/body/div[4]/div[1]/div[3]/div/div[5]/div/button").click()
     except:
@@ -82,7 +83,8 @@ def loop3():  # shares
         sleep(10)
         driver.refresh()
         print("")
-        print(">>> Shares Sent <<<")
+        print(">>> Shares Sent 100000
+<<<")
         print("")
         sleep(110)
         loop3()
@@ -93,7 +95,8 @@ def loop3():  # shares
         loop3()
 
 
-def loop4():  # likes
+def loop4():  # likes 10000
+
     sleep(10)
     try:
         driver.find_element_by_xpath("/html/body/div[4]/div[1]/div[3]/div/div[2]/div/button").click()
@@ -169,7 +172,7 @@ I am not responsible for any damage of any kind for using this script''' + Fore.
 if __name__ == '__main__':
     banner()
 
-    vidUrl = input("Your Video URL : ")
+    vidUrl = input(": https://www.tiktok.com/t/ZTdTyu5kP/?k=1")
     print("")
     bot = int(input("What do you want to do? \n1 - Get Views \n2 - Get Followers \n3 - Get Shares \n4 - Get Likes \n5 - Get Comments Likes \nPlease insert a number from the list : "))
     print("\n--------------------------------------")
